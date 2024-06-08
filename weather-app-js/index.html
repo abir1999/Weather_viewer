@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Viewer</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header-left">
+        <img class="weather-icon big" src="icons/weather.svg" data-current-icon>
+        <div class="header-current-temp">
+          <span data-current-temp>40</span>&deg;
+        </div>
+      </div>
+      
+      <div class="header-right">
+        <div class="info-set">
+          <div class="info-type">Highs</div>
+          <div><span data-current-high>10</span>&deg;</div>
+        </div>
+        <div class="info-set">
+          <div class="info-type">FL High</div>
+          <div><span data-current-flhigh>10</span>&deg;</div>
+        </div>
+        <div class="info-set">
+          <div class="info-type">Wind</div>
+          <div><span data-current-wind>10</span> <span class="sub-info-unit">MPH</span></div>
+        </div>
+        <div class="info-set">
+          <div class="info-type">Lows</div>
+          <div><span data-current-low>10</span>&deg;</div>
+        </div>
+        <div class="info-set">
+          <div class="info-type">FL Low</div>
+          <div><span data-current-fllow>10</span>&deg;</div>
+        </div>
+        <div class="info-set">
+          <div class="info-type">PRECIP</div>
+          <div><span data-current-precip>10</span> <span class="sub-info-unit">in</span></div>
+        </div>
+
+      </div>
+    </header>
+
+    <section class="days-section" data-days-section>
+      <div class="days-card">
+        <img class="weather-icon" src="icons/cloudy.svg" />
+        <div class="days-card-day">Monday</div>
+        <div>20&deg;</div>
+      </div>
+      <div class="days-card">
+        <img class="weather-icon" src="icons/cloudy.svg" />
+        <div class="days-card-day">Tuesday</div>
+        <div>20&deg;</div>
+      </div>
+      <div class="days-card">
+        <img class="weather-icon" src="icons/cloudy.svg" />
+        <div class="days-card-day">Wednesday</div>
+        <div>20&deg;</div>
+      </div>
+      <div class="days-card">
+        <img class="weather-icon" src="icons/cloudy.svg" />
+        <div class="days-card-day">Thursday</div>
+        <div>20&deg;</div>
+      </div>
+      <div class="days-card">
+        <img class="weather-icon" src="icons/cloudy.svg" />
+        <div class="days-card-day">Friday</div>
+        <div>20&deg;</div>
+      </div>
+    </section>
+
+    <table class="hourly-section">
+      <tbody data-hourly-section>
+        <tr class="hourly-row">
+          <td>
+            <div class="info-set">
+              <div class="info-type">Monday</div>
+              <div>3 PM</div>
+            </div>
+          </td>
+          <td>
+            <img src="icons/heavy-rain.svg" class="weather-icon" />
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">Temp</div>
+              <div>10&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">FL Temp</div>
+              <div>10&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">Wind</div>
+              <div>10 <span class="sub-info-unit">MPH</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">PRECIP</div>
+              <div>10 <span class="sub-info-unit">in</span></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="hourly-row">
+          <td>
+            <div class="info-set">
+              <div class="info-type">Monday</div>
+              <div>3 PM</div>
+            </div>
+          </td>
+          <td>
+            <img src="icons/heavy-rain.svg" class="weather-icon" />
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">Temp</div>
+              <div>10&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">FL Temp</div>
+              <div>10&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">Wind</div>
+              <div>10 <span class="sub-info-unit">MPH</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">PRECIP</div>
+              <div>10 <span class="sub-info-unit">in</span></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="hourly-row">
+          <td>
+            <div class="info-set">
+              <div class="info-type">Monday</div>
+              <div>3 PM</div>
+            </div>
+          </td>
+          <td>
+            <img src="icons/heavy-rain.svg" class="weather-icon" />
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">Temp</div>
+              <div>10&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">FL Temp</div>
+              <div>10&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">Wind</div>
+              <div>10 <span class="sub-info-unit">MPH</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">PRECIP</div>
+              <div>10 <span class="sub-info-unit">in</span></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="hourly-row">
+          <td>
+            <div class="info-set">
+              <div class="info-type">Monday</div>
+              <div>3 PM</div>
+            </div>
+          </td>
+          <td>
+            <img src="icons/heavy-rain.svg" class="weather-icon" />
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">Temp</div>
+              <div>10&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">FL Temp</div>
+              <div>10&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">Wind</div>
+              <div>10 <span class="sub-info-unit">MPH</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">PRECIP</div>
+              <div>10 <span class="sub-info-unit">in</span></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="hourly-row">
+          <td>
+            <div class="info-set">
+              <div class="info-type">Monday</div>
+              <div>3 PM</div>
+            </div>
+          </td>
+          <td>
+            <img src="icons/heavy-rain.svg" class="weather-icon" />
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">Temp</div>
+              <div>10&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">FL Temp</div>
+              <div>10&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">Wind</div>
+              <div>10 <span class="sub-info-unit">MPH</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">PRECIP</div>
+              <div>10 <span class="sub-info-unit">in</span></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="hourly-row">
+          <td>
+            <div class="info-set">
+              <div class="info-type">Monday</div>
+              <div>3 PM</div>
+            </div>
+          </td>
+          <td>
+            <img src="icons/heavy-rain.svg" class="weather-icon" />
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">Temp</div>
+              <div>10&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">FL Temp</div>
+              <div>10&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">Wind</div>
+              <div>10 <span class="sub-info-unit">MPH</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">PRECIP</div>
+              <div>10 <span class="sub-info-unit">in</span></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="hourly-row">
+          <td>
+            <div class="info-set">
+              <div class="info-type">Monday</div>
+              <div>3 PM</div>
+            </div>
+          </td>
+          <td>
+            <img src="icons/heavy-rain.svg" class="weather-icon" />
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">Temp</div>
+              <div>10&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">FL Temp</div>
+              <div>10&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">Wind</div>
+              <div>10 <span class="sub-info-unit">MPH</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">PRECIP</div>
+              <div>10 <span class="sub-info-unit">in</span></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="hourly-row">
+          <td>
+            <div class="info-set">
+              <div class="info-type">Monday</div>
+              <div>3 PM</div>
+            </div>
+          </td>
+          <td>
+            <img src="icons/heavy-rain.svg" class="weather-icon" />
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">Temp</div>
+              <div>10&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">FL Temp</div>
+              <div>10&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">Wind</div>
+              <div>10 <span class="sub-info-unit">MPH</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">PRECIP</div>
+              <div>10 <span class="sub-info-unit">in</span></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="hourly-row">
+          <td>
+            <div class="info-set">
+              <div class="info-type">Monday</div>
+              <div>3 PM</div>
+            </div>
+          </td>
+          <td>
+            <img src="icons/heavy-rain.svg" class="weather-icon" />
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">Temp</div>
+              <div>10&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">FL Temp</div>
+              <div>10&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">Wind</div>
+              <div>10 <span class="sub-info-unit">MPH</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">PRECIP</div>
+              <div>10 <span class="sub-info-unit">in</span></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="hourly-row">
+          <td>
+            <div class="info-set">
+              <div class="info-type">Monday</div>
+              <div>3 PM</div>
+            </div>
+          </td>
+          <td>
+            <img src="icons/heavy-rain.svg" class="weather-icon" />
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">Temp</div>
+              <div>10&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">FL Temp</div>
+              <div>10&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">Wind</div>
+              <div>10 <span class="sub-info-unit">MPH</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">PRECIP</div>
+              <div>10 <span class="sub-info-unit">in</span></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="hourly-row">
+          <td>
+            <div class="info-set">
+              <div class="info-type">Monday</div>
+              <div>3 PM</div>
+            </div>
+          </td>
+          <td>
+            <img src="icons/heavy-rain.svg" class="weather-icon" />
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">Temp</div>
+              <div>10&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">FL Temp</div>
+              <div>10&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">Wind</div>
+              <div>10 <span class="sub-info-unit">MPH</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">PRECIP</div>
+              <div>10 <span class="sub-info-unit">in</span></div>
+            </div>
+          </td>
+        </tr>
+        <tr class="hourly-row">
+          <td>
+            <div class="info-set">
+              <div class="info-type">Monday</div>
+              <div>3 PM</div>
+            </div>
+          </td>
+          <td>
+            <img src="icons/heavy-rain.svg" class="weather-icon" />
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">Temp</div>
+              <div>10&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">FL Temp</div>
+              <div>10&deg;</div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">Wind</div>
+              <div>10 <span class="sub-info-unit">MPH</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="info-set">
+              <div class="info-type">PRECIP</div>
+              <div>10 <span class="sub-info-unit">in</span></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+
+    <template id="days-card-template">
+      <div class="days-card">
+        <img class="weather-icon" data-icon />
+        <div class="days-card-day" data-date></div>
+        <div><span data-temp></span>&deg;</div>
+      </div>
+    </template>
+
+    <template id="hourly-row-template">
+      <tr class="hourly-row">
+        <td>
+          <div class="info-set">
+            <div class="info-type" data-day></div>
+            <div data-time></div>
+          </div>
+        </td>
+        <td>
+          <img class="weather-icon" data-icon/>
+        </td>
+        <td>
+          <div class="info-set">
+            <div class="info-type">Temp</div>
+            <div><span data-temp></span>&deg;</div>
+          </div>
+        </td>
+        <td>
+          <div class="info-set">
+            <div class="info-type">FL Temp</div>
+            <div><span data-fltemp></span>&deg;</div>
+          </div>
+        </td>
+        <td>
+          <div class="info-set">
+            <div class="info-type">Wind</div>
+            <div><span data-wind></span> <span class="sub-info-unit">MPH</span></div>
+          </div>
+        </td>
+        <td>
+          <div class="info-set">
+            <div class="info-type">PRECIP</div>
+            <div><span data-precip> <span class="sub-info-unit">in</span></div>
+          </div>
+        </td>
+      </tr>
+    </template>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
